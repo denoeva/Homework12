@@ -3,10 +3,16 @@ package homework12_objects_methods;
 public class Book {
     private String name;
     private int year;
+    private Author author;
 
-    public Book(String name, int year) {
+    public Book(String name, int year, Author author) {
         this.name = name;
         this.year = year;
+        this.author = author;
+    }
+
+    public Author getAuthor() {
+        return author;
     }
 
     public String getName() {
@@ -20,4 +26,5 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
+
 }
